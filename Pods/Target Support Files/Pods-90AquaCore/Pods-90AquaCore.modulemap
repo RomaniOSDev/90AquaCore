@@ -1,0 +1,6 @@
+framework module Pods_90AquaCore {
+  umbrella header "Pods-90AquaCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

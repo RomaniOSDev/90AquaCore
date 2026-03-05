@@ -3,33 +3,103 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		748175542F59B1D6008BA5CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7481754A2F59B1D6008BA5CC /* Assets.xcassets */; };
+		748175562F59B1D6008BA5CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7481754E2F59B1D6008BA5CC /* LaunchScreen.storyboard */; };
+		748175572F59B1D6008BA5CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748175502F59B1D6008BA5CC /* Main.storyboard */; };
+		748175582F59B1D6008BA5CC /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175132F59B1D6008BA5CC /* Achievement.swift */; };
+		748175592F59B1D6008BA5CC /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175142F59B1D6008BA5CC /* Gender.swift */; };
+		7481755A2F59B1D6008BA5CC /* HydrationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175152F59B1D6008BA5CC /* HydrationEntry.swift */; };
+		7481755B2F59B1D6008BA5CC /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175162F59B1D6008BA5CC /* ReminderItem.swift */; };
+		7481755C2F59B1D6008BA5CC /* TemperatureLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175172F59B1D6008BA5CC /* TemperatureLevel.swift */; };
+		7481755D2F59B1D6008BA5CC /* TimeGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175182F59B1D6008BA5CC /* TimeGoal.swift */; };
+		7481755E2F59B1D6008BA5CC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175192F59B1D6008BA5CC /* UserProfile.swift */; };
+		7481755F2F59B1D6008BA5CC /* WorkoutIntensity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481751A2F59B1D6008BA5CC /* WorkoutIntensity.swift */; };
+		748175602F59B1D6008BA5CC /* AchievementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481751C2F59B1D6008BA5CC /* AchievementService.swift */; };
+		748175612F59B1D6008BA5CC /* AppSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481751D2F59B1D6008BA5CC /* AppSettingsService.swift */; };
+		748175622F59B1D6008BA5CC /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481751E2F59B1D6008BA5CC /* ExportService.swift */; };
+		748175632F59B1D6008BA5CC /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481751F2F59B1D6008BA5CC /* NotificationManager.swift */; };
+		748175642F59B1D6008BA5CC /* AquaCoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175212F59B1D6008BA5CC /* AquaCoreViewModel.swift */; };
+		748175652F59B1D6008BA5CC /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175232F59B1D6008BA5CC /* AchievementsView.swift */; };
+		748175662F59B1D6008BA5CC /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175252F59B1D6008BA5CC /* AddEntryView.swift */; };
+		748175672F59B1D6008BA5CC /* CalendarHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175272F59B1D6008BA5CC /* CalendarHistoryView.swift */; };
+		748175682F59B1D6008BA5CC /* AquaDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175292F59B1D6008BA5CC /* AquaDesign.swift */; };
+		748175692F59B1D6008BA5CC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481752A2F59B1D6008BA5CC /* CircularProgressView.swift */; };
+		7481756A2F59B1D6008BA5CC /* InteractiveDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481752B2F59B1D6008BA5CC /* InteractiveDropView.swift */; };
+		7481756B2F59B1D6008BA5CC /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481752C2F59B1D6008BA5CC /* ShareSheet.swift */; };
+		7481756C2F59B1D6008BA5CC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481752E2F59B1D6008BA5CC /* DashboardView.swift */; };
+		7481756D2F59B1D6008BA5CC /* TimeGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175302F59B1D6008BA5CC /* TimeGoalsView.swift */; };
+		7481756E2F59B1D6008BA5CC /* EditEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175322F59B1D6008BA5CC /* EditEntryView.swift */; };
+		7481756F2F59B1D6008BA5CC /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175332F59B1D6008BA5CC /* HistoryView.swift */; };
+		748175702F59B1D6008BA5CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175352F59B1D6008BA5CC /* HomeView.swift */; };
+		748175712F59B1D6008BA5CC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175372F59B1D6008BA5CC /* OnboardingView.swift */; };
+		748175722F59B1D6008BA5CC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175392F59B1D6008BA5CC /* ProfileView.swift */; };
+		748175732F59B1D6008BA5CC /* ProgressContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481753B2F59B1D6008BA5CC /* ProgressContainerView.swift */; };
+		748175742F59B1D6008BA5CC /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481753D2F59B1D6008BA5CC /* RemindersView.swift */; };
+		748175752F59B1D6008BA5CC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481753F2F59B1D6008BA5CC /* SettingsView.swift */; };
+		748175762F59B1D6008BA5CC /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175412F59B1D6008BA5CC /* CheckLink.swift */; };
+		748175772F59B1D6008BA5CC /* MainStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175422F59B1D6008BA5CC /* MainStartView.swift */; };
+		748175782F59B1D6008BA5CC /* ShowPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175432F59B1D6008BA5CC /* ShowPrivacyView.swift */; };
+		748175792F59B1D6008BA5CC /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175452F59B1D6008BA5CC /* StatisticsView.swift */; };
+		7481757A2F59B1D6008BA5CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175482F59B1D6008BA5CC /* AppDelegate.swift */; };
+		7481757B2F59B1D6008BA5CC /* AquaCoreColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175492F59B1D6008BA5CC /* AquaCoreColors.swift */; };
+		7481757C2F59B1D6008BA5CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481754B2F59B1D6008BA5CC /* ContentView.swift */; };
+		7481757D2F59B1D6008BA5CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175512F59B1D6008BA5CC /* SceneDelegate.swift */; };
+		7481757E2F59B1D6008BA5CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748175522F59B1D6008BA5CC /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		6EC9FE8F72670C5C0EC67381 /* Pods-90AquaCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-90AquaCore.debug.xcconfig"; path = "Target Support Files/Pods-90AquaCore/Pods-90AquaCore.debug.xcconfig"; sourceTree = "<group>"; };
 		7434657C2F3D4481006DFFE8 /* 90AquaCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 90AquaCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748175132F59B1D6008BA5CC /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		748175142F59B1D6008BA5CC /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		748175152F59B1D6008BA5CC /* HydrationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationEntry.swift; sourceTree = "<group>"; };
+		748175162F59B1D6008BA5CC /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
+		748175172F59B1D6008BA5CC /* TemperatureLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureLevel.swift; sourceTree = "<group>"; };
+		748175182F59B1D6008BA5CC /* TimeGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGoal.swift; sourceTree = "<group>"; };
+		748175192F59B1D6008BA5CC /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7481751A2F59B1D6008BA5CC /* WorkoutIntensity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntensity.swift; sourceTree = "<group>"; };
+		7481751C2F59B1D6008BA5CC /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
+		7481751D2F59B1D6008BA5CC /* AppSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsService.swift; sourceTree = "<group>"; };
+		7481751E2F59B1D6008BA5CC /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		7481751F2F59B1D6008BA5CC /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		748175212F59B1D6008BA5CC /* AquaCoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaCoreViewModel.swift; sourceTree = "<group>"; };
+		748175232F59B1D6008BA5CC /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		748175252F59B1D6008BA5CC /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+		748175272F59B1D6008BA5CC /* CalendarHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHistoryView.swift; sourceTree = "<group>"; };
+		748175292F59B1D6008BA5CC /* AquaDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaDesign.swift; sourceTree = "<group>"; };
+		7481752A2F59B1D6008BA5CC /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		7481752B2F59B1D6008BA5CC /* InteractiveDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveDropView.swift; sourceTree = "<group>"; };
+		7481752C2F59B1D6008BA5CC /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		7481752E2F59B1D6008BA5CC /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		748175302F59B1D6008BA5CC /* TimeGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGoalsView.swift; sourceTree = "<group>"; };
+		748175322F59B1D6008BA5CC /* EditEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntryView.swift; sourceTree = "<group>"; };
+		748175332F59B1D6008BA5CC /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		748175352F59B1D6008BA5CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		748175372F59B1D6008BA5CC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		748175392F59B1D6008BA5CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7481753B2F59B1D6008BA5CC /* ProgressContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressContainerView.swift; sourceTree = "<group>"; };
+		7481753D2F59B1D6008BA5CC /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
+		7481753F2F59B1D6008BA5CC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		748175412F59B1D6008BA5CC /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		748175422F59B1D6008BA5CC /* MainStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStartView.swift; sourceTree = "<group>"; };
+		748175432F59B1D6008BA5CC /* ShowPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPrivacyView.swift; sourceTree = "<group>"; };
+		748175452F59B1D6008BA5CC /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		748175482F59B1D6008BA5CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		748175492F59B1D6008BA5CC /* AquaCoreColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaCoreColors.swift; sourceTree = "<group>"; };
+		7481754A2F59B1D6008BA5CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7481754B2F59B1D6008BA5CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7481754C2F59B1D6008BA5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7481754D2F59B1D6008BA5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7481754F2F59B1D6008BA5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		748175512F59B1D6008BA5CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		748175522F59B1D6008BA5CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD41A3B02D80362355C1C2F4 /* Pods_90AquaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_90AquaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB42683DF25E0F2988C4ABF /* Pods-90AquaCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-90AquaCore.release.xcconfig"; path = "Target Support Files/Pods-90AquaCore/Pods-90AquaCore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7434658E2F3D4482006DFFE8 /* Exceptions for "90AquaCore" folder in "90AquaCore" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7434657B2F3D4481006DFFE8 /* 90AquaCore */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7434657E2F3D4481006DFFE8 /* 90AquaCore */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7434658E2F3D4482006DFFE8 /* Exceptions for "90AquaCore" folder in "90AquaCore" target */,
-			);
-			path = 90AquaCore;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		743465792F3D4481006DFFE8 /* Frameworks */ = {
@@ -42,11 +112,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121B90904B465ABB80D21B5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EC9FE8F72670C5C0EC67381 /* Pods-90AquaCore.debug.xcconfig */,
+				ECB42683DF25E0F2988C4ABF /* Pods-90AquaCore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6FA5C00028404682CED56758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD41A3B02D80362355C1C2F4 /* Pods_90AquaCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		743465732F3D4481006DFFE8 = {
 			isa = PBXGroup;
 			children = (
-				7434657E2F3D4481006DFFE8 /* 90AquaCore */,
+				748175532F59B1D6008BA5CC /* 90AquaCore */,
 				7434657D2F3D4481006DFFE8 /* Products */,
+				121B90904B465ABB80D21B5C /* Pods */,
+				6FA5C00028404682CED56758 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +147,208 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7481751B2F59B1D6008BA5CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				748175132F59B1D6008BA5CC /* Achievement.swift */,
+				748175142F59B1D6008BA5CC /* Gender.swift */,
+				748175152F59B1D6008BA5CC /* HydrationEntry.swift */,
+				748175162F59B1D6008BA5CC /* ReminderItem.swift */,
+				748175172F59B1D6008BA5CC /* TemperatureLevel.swift */,
+				748175182F59B1D6008BA5CC /* TimeGoal.swift */,
+				748175192F59B1D6008BA5CC /* UserProfile.swift */,
+				7481751A2F59B1D6008BA5CC /* WorkoutIntensity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		748175202F59B1D6008BA5CC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7481751C2F59B1D6008BA5CC /* AchievementService.swift */,
+				7481751D2F59B1D6008BA5CC /* AppSettingsService.swift */,
+				7481751E2F59B1D6008BA5CC /* ExportService.swift */,
+				7481751F2F59B1D6008BA5CC /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		748175222F59B1D6008BA5CC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				748175212F59B1D6008BA5CC /* AquaCoreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		748175242F59B1D6008BA5CC /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				748175232F59B1D6008BA5CC /* AchievementsView.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		748175262F59B1D6008BA5CC /* AddEntry */ = {
+			isa = PBXGroup;
+			children = (
+				748175252F59B1D6008BA5CC /* AddEntryView.swift */,
+			);
+			path = AddEntry;
+			sourceTree = "<group>";
+		};
+		748175282F59B1D6008BA5CC /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				748175272F59B1D6008BA5CC /* CalendarHistoryView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		7481752D2F59B1D6008BA5CC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				748175292F59B1D6008BA5CC /* AquaDesign.swift */,
+				7481752A2F59B1D6008BA5CC /* CircularProgressView.swift */,
+				7481752B2F59B1D6008BA5CC /* InteractiveDropView.swift */,
+				7481752C2F59B1D6008BA5CC /* ShareSheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7481752F2F59B1D6008BA5CC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				7481752E2F59B1D6008BA5CC /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		748175312F59B1D6008BA5CC /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				748175302F59B1D6008BA5CC /* TimeGoalsView.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		748175342F59B1D6008BA5CC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				748175322F59B1D6008BA5CC /* EditEntryView.swift */,
+				748175332F59B1D6008BA5CC /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		748175362F59B1D6008BA5CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				748175352F59B1D6008BA5CC /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		748175382F59B1D6008BA5CC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				748175372F59B1D6008BA5CC /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7481753A2F59B1D6008BA5CC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				748175392F59B1D6008BA5CC /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7481753C2F59B1D6008BA5CC /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				7481753B2F59B1D6008BA5CC /* ProgressContainerView.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		7481753E2F59B1D6008BA5CC /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				7481753D2F59B1D6008BA5CC /* RemindersView.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		748175402F59B1D6008BA5CC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7481753F2F59B1D6008BA5CC /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		748175442F59B1D6008BA5CC /* StartingView */ = {
+			isa = PBXGroup;
+			children = (
+				748175412F59B1D6008BA5CC /* CheckLink.swift */,
+				748175422F59B1D6008BA5CC /* MainStartView.swift */,
+				748175432F59B1D6008BA5CC /* ShowPrivacyView.swift */,
+			);
+			path = StartingView;
+			sourceTree = "<group>";
+		};
+		748175462F59B1D6008BA5CC /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				748175452F59B1D6008BA5CC /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		748175472F59B1D6008BA5CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				748175242F59B1D6008BA5CC /* Achievements */,
+				748175262F59B1D6008BA5CC /* AddEntry */,
+				748175282F59B1D6008BA5CC /* Calendar */,
+				7481752D2F59B1D6008BA5CC /* Components */,
+				7481752F2F59B1D6008BA5CC /* Dashboard */,
+				748175312F59B1D6008BA5CC /* Goals */,
+				748175342F59B1D6008BA5CC /* History */,
+				748175362F59B1D6008BA5CC /* Home */,
+				748175382F59B1D6008BA5CC /* Onboarding */,
+				7481753A2F59B1D6008BA5CC /* Profile */,
+				7481753C2F59B1D6008BA5CC /* Progress */,
+				7481753E2F59B1D6008BA5CC /* Reminders */,
+				748175402F59B1D6008BA5CC /* Settings */,
+				748175442F59B1D6008BA5CC /* StartingView */,
+				748175462F59B1D6008BA5CC /* Statistics */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		748175532F59B1D6008BA5CC /* 90AquaCore */ = {
+			isa = PBXGroup;
+			children = (
+				7481751B2F59B1D6008BA5CC /* Models */,
+				748175202F59B1D6008BA5CC /* Services */,
+				748175222F59B1D6008BA5CC /* ViewModels */,
+				748175472F59B1D6008BA5CC /* Views */,
+				748175482F59B1D6008BA5CC /* AppDelegate.swift */,
+				748175492F59B1D6008BA5CC /* AquaCoreColors.swift */,
+				7481754A2F59B1D6008BA5CC /* Assets.xcassets */,
+				7481754B2F59B1D6008BA5CC /* ContentView.swift */,
+				7481754C2F59B1D6008BA5CC /* Info.plist */,
+				7481754E2F59B1D6008BA5CC /* LaunchScreen.storyboard */,
+				748175502F59B1D6008BA5CC /* Main.storyboard */,
+				748175512F59B1D6008BA5CC /* SceneDelegate.swift */,
+				748175522F59B1D6008BA5CC /* ViewController.swift */,
+			);
+			path = 90AquaCore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +356,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7434658F2F3D4482006DFFE8 /* Build configuration list for PBXNativeTarget "90AquaCore" */;
 			buildPhases = (
+				DBB6799A7FE21B6CE61BFED8 /* [CP] Check Pods Manifest.lock */,
 				743465782F3D4481006DFFE8 /* Sources */,
 				743465792F3D4481006DFFE8 /* Frameworks */,
 				7434657A2F3D4481006DFFE8 /* Resources */,
@@ -73,12 +365,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				7434657E2F3D4481006DFFE8 /* 90AquaCore */,
-			);
 			name = 90AquaCore;
-			packageProductDependencies = (
-			);
 			productName = 90AquaCore;
 			productReference = 7434657C2F3D4481006DFFE8 /* 90AquaCore.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +386,7 @@
 				};
 			};
 			buildConfigurationList = 743465772F3D4481006DFFE8 /* Build configuration list for PBXProject "90AquaCore" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +394,6 @@
 				Base,
 			);
 			mainGroup = 743465732F3D4481006DFFE8;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 7434657D2F3D4481006DFFE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,24 +408,111 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748175542F59B1D6008BA5CC /* Assets.xcassets in Resources */,
+				748175562F59B1D6008BA5CC /* LaunchScreen.storyboard in Resources */,
+				748175572F59B1D6008BA5CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DBB6799A7FE21B6CE61BFED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-90AquaCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		743465782F3D4481006DFFE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748175582F59B1D6008BA5CC /* Achievement.swift in Sources */,
+				748175592F59B1D6008BA5CC /* Gender.swift in Sources */,
+				7481755A2F59B1D6008BA5CC /* HydrationEntry.swift in Sources */,
+				7481755B2F59B1D6008BA5CC /* ReminderItem.swift in Sources */,
+				7481755C2F59B1D6008BA5CC /* TemperatureLevel.swift in Sources */,
+				7481755D2F59B1D6008BA5CC /* TimeGoal.swift in Sources */,
+				7481755E2F59B1D6008BA5CC /* UserProfile.swift in Sources */,
+				7481755F2F59B1D6008BA5CC /* WorkoutIntensity.swift in Sources */,
+				748175602F59B1D6008BA5CC /* AchievementService.swift in Sources */,
+				748175612F59B1D6008BA5CC /* AppSettingsService.swift in Sources */,
+				748175622F59B1D6008BA5CC /* ExportService.swift in Sources */,
+				748175632F59B1D6008BA5CC /* NotificationManager.swift in Sources */,
+				748175642F59B1D6008BA5CC /* AquaCoreViewModel.swift in Sources */,
+				748175652F59B1D6008BA5CC /* AchievementsView.swift in Sources */,
+				748175662F59B1D6008BA5CC /* AddEntryView.swift in Sources */,
+				748175672F59B1D6008BA5CC /* CalendarHistoryView.swift in Sources */,
+				748175682F59B1D6008BA5CC /* AquaDesign.swift in Sources */,
+				748175692F59B1D6008BA5CC /* CircularProgressView.swift in Sources */,
+				7481756A2F59B1D6008BA5CC /* InteractiveDropView.swift in Sources */,
+				7481756B2F59B1D6008BA5CC /* ShareSheet.swift in Sources */,
+				7481756C2F59B1D6008BA5CC /* DashboardView.swift in Sources */,
+				7481756D2F59B1D6008BA5CC /* TimeGoalsView.swift in Sources */,
+				7481756E2F59B1D6008BA5CC /* EditEntryView.swift in Sources */,
+				7481756F2F59B1D6008BA5CC /* HistoryView.swift in Sources */,
+				748175702F59B1D6008BA5CC /* HomeView.swift in Sources */,
+				748175712F59B1D6008BA5CC /* OnboardingView.swift in Sources */,
+				748175722F59B1D6008BA5CC /* ProfileView.swift in Sources */,
+				748175732F59B1D6008BA5CC /* ProgressContainerView.swift in Sources */,
+				748175742F59B1D6008BA5CC /* RemindersView.swift in Sources */,
+				748175752F59B1D6008BA5CC /* SettingsView.swift in Sources */,
+				748175762F59B1D6008BA5CC /* CheckLink.swift in Sources */,
+				748175772F59B1D6008BA5CC /* MainStartView.swift in Sources */,
+				748175782F59B1D6008BA5CC /* ShowPrivacyView.swift in Sources */,
+				748175792F59B1D6008BA5CC /* StatisticsView.swift in Sources */,
+				7481757A2F59B1D6008BA5CC /* AppDelegate.swift in Sources */,
+				7481757B2F59B1D6008BA5CC /* AquaCoreColors.swift in Sources */,
+				7481757C2F59B1D6008BA5CC /* ContentView.swift in Sources */,
+				7481757D2F59B1D6008BA5CC /* SceneDelegate.swift in Sources */,
+				7481757E2F59B1D6008BA5CC /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		7481754E2F59B1D6008BA5CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7481754D2F59B1D6008BA5CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		748175502F59B1D6008BA5CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7481754F2F59B1D6008BA5CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		743465902F3D4482006DFFE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC9FE8F72670C5C0EC67381 /* Pods-90AquaCore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -147,30 +520,37 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 90AquaCore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lumbexar AquaCore";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.-0AquaCore";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kri.l3mb1x8r9q;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		743465912F3D4482006DFFE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB42683DF25E0F2988C4ABF /* Pods-90AquaCore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -178,25 +558,31 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 90AquaCore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lumbexar AquaCore";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.-0AquaCore";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kri.l3mb1x8r9q;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
