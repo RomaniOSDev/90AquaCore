@@ -1,8 +1,8 @@
 //
 //  MainStartView.swift
-//  85RecoveryFlow
+//  90AquaCore
 //
-//  Created by Costing Pinocchio on 08.02.2026.
+//  Created by Sasa Levak on 20.02.2026.
 //
 
 import UIKit

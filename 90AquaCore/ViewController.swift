@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  90AquaCore
 //
-//  Created by Роман Главацкий on 12.02.2026.
+//  Created by Sasa Levak on 12.02.2026.
 //
 
 import UIKit

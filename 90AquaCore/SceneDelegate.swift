@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  90AquaCore
 //
-//  Created by Роман Главацкий on 12.02.2026.
+//  Created by Sasa Levak on 12.02.2026.
 //
 
 import UIKit
@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func makeRootViewController() -> UIViewController {
-        let targetDateString = "12.03.2026"
+        let targetDateString = "25.03.2026"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
         let targetDate = dateFormatter.date(from: targetDateString) ?? Date()
